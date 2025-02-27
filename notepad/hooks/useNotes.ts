@@ -29,8 +29,6 @@ export function useNotes() {
   }, [loadNotes]);
 
   const saveNotes = async (updatedNotes: Note[]) => {
-    // This function is not needed with Supabase as we'll update the database directly
-    // Keeping it for consistency with the original code structure
     setNotes(updatedNotes);
   };
 
